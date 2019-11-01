@@ -29,8 +29,8 @@ apt-get -y dist-upgrade
 apt-get install -y sudo
 
 # 1. ADD NEW USER ACCOUNT
-adduser --disabled-password --gecos '' twcam
-adduser twcam sudo &&
+adduser --disabled-password --gecos '' app
+adduser app sudo &&
 echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers;
 
 chmod g+rw /home 
